@@ -48,7 +48,7 @@
         $new_name .= '.png';
         break;
 
-      // 画像以外のファイルのとき
+      // 画像以外のファイルの時
       default:
         header('Location: upload.php');
         exit();
@@ -70,7 +70,7 @@
 </head>
     <body>
         <h1>エンジニア交流サイト：画像アップロード</h1>
-        <p><a href="index.php">トップページに戻る</a></p>   
+        <p><a href="index.php">トップページに戻る</a></p>
         <?php
             if ($msg) {
                 echo '<p>'.$msg.'</p>';
@@ -79,6 +79,6 @@
         <form action="upload.php" method="post" enctype="multipart/form-data">
             <input type="file" name="image">
             <input type="submit" value="アップロード">
-        </form>  
+        </form>
     </body>
 </html>
